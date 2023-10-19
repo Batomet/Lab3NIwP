@@ -1,0 +1,118 @@
+\documentclass[b5paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\begin{document}
+\section{Zadanie1}
+\textbf{Pogrubienie} \\
+\emph{Kursywa} \\
+\underline{Podkreślenie} \\
+\textbf{\underline{Pogrubienie i podkreślenie}}\\
+\texttt{Tekst w typewriter} \\
+{\tiny To bardzo mały tekst} \\
+{\small To mały tekst} \\
+{\normalsize To normalny tekst} \\
+{\large To duży tekst} \\
+{\Large To bardzo duży tekst}
+
+\section{Zadanie2}
+\begin{align}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \notag \\
+\nabla \cdot \mathbf{B} &= 0 \notag \\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \notag \\
+\nabla \times \mathbf{B} &= \mu_0\mathbf{J} + \mu_0\varepsilon_0\frac{\partial \mathbf{E}}{\partial t} \notag
+\end{align}
+
+Gdzie:
+\begin{align}
+\mathbf{E} & - \text{pole elektryczne}, \notag \\
+\mathbf{B} & - \text{pole magnetyczne}, \notag \\
+\rho & - \text{gęstość ładunku}, \notag \\
+\mathbf{J} & - \text{gęstość prądu}, \notag \\
+\varepsilon_0 & - \text{przenikalność elektryczna próżni}, \notag \\
+\mu_0 & - \text{przenikalność magnetyczna próżni}, \notag \\
+t & - \text{czas}.
+\end{align}
+
+\section{Zadanie3}
+
+\begin{equation}
+\mathbf{A} =
+\begin{bmatrix}
+    a_{11} & a_{12} \\
+    a_{21} & a_{22}
+\end{bmatrix}
+\begin{bmatrix}
+    b_{11} \\
+    b_{21}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    c_{11}\\
+    c_{21}
+\end{bmatrix}
+\end{equation}
+
+\section{Zadanie4}
+\begin{table}[H]
+\centering
+\caption{Obliczenia dla funkcji $f(x) = 4 \cdot x$}
+\label{tab:obliczenia}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{x} & \textbf{1} & \textbf{2} & \textbf{3} \\
+\hline
+\textbf{f(x)} & 4 & 8 & 12 \\
+\hline
+\textbf{$f(x)$} & 4 & 8 & 12\\
+\hline
+\end{tabular}
+\end{table}
+W tabeli \ref{tab:obliczenia} zestawiono obliczenia dla funkcji $f(x) = 4 \cdot x$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth, angle=45]{ModLogoPO.jpg}
+\caption{Przykładowy rysunek}
+\label{fig:przykladowy}
+\end{figure}
+Dodano przykładowy rysunek (Rysunek \ref{fig:przykladowy}) do tekstu.
+
+\section{Zadanie5}
+Lista numerowana:
+\begin{enumerate}
+    \item pierwsza
+    \item druga
+    \item trzecia
+\end{enumerate}
+
+Przykład listy nienumerowanej:
+\begin{itemize}
+    \item pierwsza
+    \item druga
+    \item trzecia
+\end{itemize}
+\section{Zadanie6}
+Odwiedź mojego linkedina: \url{https://www.linkedin.com/in/bartosz-kłonowski/}
+Skontaktuj się ze mną: \href{mailto:bar.klonowski@student.po.edu.pl}{bar.klonowski@student.po.edu.pl}\\
+Zobacz na rys.~1 na następnej stronie.
+
+
+
+\section{Zadanie7}
+\bibliographystyle{plain}
+\bibliography{literatura}
+Oto przykład cytowania źródła \cite{Mynarek2011}.
+
+\section{Zadanie8}
+\tableofcontents 
+
+\listoftables 
+
+\listoffigures 
+\end{document}
